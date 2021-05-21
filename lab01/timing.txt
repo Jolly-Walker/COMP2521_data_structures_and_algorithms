@@ -1,0 +1,31 @@
+Input	Initial	Has	Number	AvgTime	AvgTime
+Size	Order	Dup of runs	forusel	forsort
+5000	random	no	5	0.223	0.049
+5000	sorted	no	5	0.093	0.048
+5000	reverse	no	5	0.087	0.042
+5000	random	yes	5	0.254	0.059
+5000	sorted	yes	5	0.092	0.059
+5000	reverse	yes	5	0.091	0.063
+10000	random	no	5	0.572	0.154
+10000	sorted	no	5	0.176	0.134   
+10000	reverse	no	5	0.179	0.143
+10000	random	yes	5	0.581	0.145
+10000	sorted	yes	5	0.171	0.130
+10000	reverse	yes	5	0.175	0.140
+
+The larger the input size, the more time needed to sort the data. The reason for
+this is because with more data to sort, there would definitely be more operations
+performed in the program before it completes.
+
+useIntList requires more time to sort the numbers than 'sort -n'. This is probably
+because 'sort' runs on a different data structure. It is also definitely using 
+a different and more efficient algorithm, which is evident in the average time being similar regardless of the input being already sorted, random or reversed.
+
+useIntList peforms faster when the input is sorted or reversed and significantly
+slower when the input is random.This is because the programs checks if the next 
+number would fit in the head or the tail of the list and straight away place it
+in correctly, if it is neither, it would traverse the linked list making comparisons until it finds the correct position.
+
+
+
+
